@@ -1,0 +1,159 @@
+body{
+  margin: 0;
+  min-height: 100vh;
+}
+
+.header {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:1rem;
+}
+.header_logo {
+  width: 13rem;
+}
+
+.navbar-buttons{
+  display: flex;
+  gap: 5rem;
+  list-style-type: none;
+  font-size:large;
+}
+
+.navbar-btn{
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar-btn:active{
+  color: #86c232;
+}
+
+.navbar-btn:hover::after{
+  position: absolute;
+    content: '';
+    height: 3px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #86c232;
+}
+
+.content{
+  display: flex;
+  max-height: calc(100vh - 9rem);
+}
+
+#map {
+  min-height: calc(100vh - 9rem);
+  width: 70%;
+}
+
+/*message box styling*/
+.message_box{
+ width: 30%;
+ overflow-y: auto;
+ padding-inline: 10px;
+ 
+}
+.example_msg {
+  border: 2px solid black;
+  max-height: 200px;
+  padding: 10px;
+  display:flex;
+  justify-content: space-between;
+  margin-block-end: 10px;
+}
+
+.example_msg>.crash_info>img {
+  max-width: 100px;
+  aspect-ratio: 3/2;
+}
+
+.example_msg>.time_info{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer{
+  background-color: #86c232;
+  min-height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/*login page styles*/
+.formular {
+  max-width: 300px;
+  min-height: 300px;
+  color: white;
+  border: 2px solid #86c232;
+  border-radius:5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+  gap: 0.8rem;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.formular>input {
+  min-height: 2.4rem;
+  min-width: 15rem;
+  font-size: 1rem;
+}
+
+.submit-buttons{
+  display: flex;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.btn {
+  color: black;
+  background-color: #86c232;
+  cursor: pointer;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  outline: 2px solid #699728;
+}
+
+/*dashboard styling*/
+.dashboard{
+  display: flex;
+  gap: 10rem;
+  margin-top: 50px;
+}
+.nehoda-fs{
+  margin-left: 10rem;
+  margin-top: 9rem;
+}
+
+.nehoda-info {
+  display: flex;
+  flex-direction: column;
+  min-width: fit-content;
+}
+
+/*icon hover text and cursor*/
+.remove{
+  height: min-content;
+}
+.remove:hover{
+  cursor: pointer;
+}
